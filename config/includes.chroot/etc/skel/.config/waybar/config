@@ -1,0 +1,45 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "spacing": 0,
+  "modules-left": ["custom/brand"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/search", "pulseaudio", "bluetooth", "network", "battery"],
+
+  "custom/brand": { "format": "HatTriad", "tooltip": false },
+
+  "clock": {
+    "format": "{:%a %d %b  ·  %H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y}"
+  },
+
+  "custom/search": { "format": "\uf002", "tooltip": false },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "\uf026",
+    "format-icons": { "default": ["\uf027", "\uf028"] },
+    "tooltip": false
+  },
+
+  "bluetooth": {
+    "format": "\uf293",
+    "format-disabled": "",
+    "format-no-controller": "",
+    "tooltip-format": "Bluetooth: {status}"
+  },
+
+  "network": {
+    "format-wifi": "\uf1eb {signalStrength}%",
+    "format-ethernet": "\uf0ac",
+    "format-disconnected": "\uf071",
+    "tooltip-format": "{ifname}  {ipaddr}"
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"],
+    "states": { "warning": 20, "critical": 10 }
+  }
+}

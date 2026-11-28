@@ -1,0 +1,38 @@
+* {
+  font-family: "DejaVu Sans", "FontAwesome", "Font Awesome 5 Free";
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(7, 10, 42, 0.82);
+  color: #EDEBFF;
+}
+
+#custom-brand {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 18px;
+}
+
+#clock {
+  padding: 0 12px;
+}
+
+#custom-search,
+#pulseaudio,
+#bluetooth,
+#network,
+#battery {
+  margin: 5px 0 5px 8px;
+  padding: 0 12px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 10px;
+}
+
+#battery.warning { color: #FFD84D; }
+#battery.critical { color: #FF6B9A; }
+
+.modules-right { margin-right: 14px; }

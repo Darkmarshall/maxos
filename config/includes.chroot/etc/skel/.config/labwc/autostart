@@ -1,2 +1,3 @@
 swaybg -c '#0B0B1E' >/dev/null 2>&1 &
+waybar >/dev/null 2>&1 &
 foot sh -c 'cat /etc/os-release; exec bash' >/dev/null 2>&1 &
